@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=yaoxing-star" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fa" />
+    <meta name="description" content="YaoXing — Software Engineering student at Monash University. Exploring thoughtful ideas, dependable software, and the possibilities in between." />
+    <title>YaoXing — Curiosity. Code. Possibility.</title>
+    <script>
+      try {
+        var choice = localStorage.getItem('li-theme');
+        document.documentElement.dataset.theme = choice === 'dark' || choice === 'light'
+          ? choice : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {
+        document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+    </script>
+  <script>
+      var preferredLocale;
+      try { preferredLocale = localStorage.getItem('li-locale'); } catch (_) {}
+      var pageLocale = preferredLocale === 'en' || preferredLocale === 'zh'
+        ? preferredLocale : (navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+      document.documentElement.lang = pageLocale === 'zh' ? 'zh-CN' : 'en';
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript><p lang="zh-CN">本网站需要启用 JavaScript。也可以访问 github.com/Liexx666。</p><p lang="en">This portfolio needs JavaScript. You can also visit github.com/Liexx666.</p></noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

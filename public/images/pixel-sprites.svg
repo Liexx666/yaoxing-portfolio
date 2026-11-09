@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<symbol id="star" viewBox="0 0 24 24"><path d="M10 0h4v6h4v4h6v4h-6v4h-4v6h-4v-6H6v-4H0v-4h6V6h4z" fill="currentColor"/><path d="M10 8h4v2h2v4h-2v2h-4v-2H8v-4h2z" fill="#fff" fill-opacity=".65"/></symbol>
+<symbol id="ghost" viewBox="0 0 24 24"><path d="M8 2h8v2h4v4h2v14h-4v-3h-3v3H9v-3H6v3H2V8h2V4h4z" fill="currentColor"/><path d="M6 9h4v5H6zm8 0h4v5h-4z" fill="#fff"/><path d="M8 10h2v3H8zm6 0h2v3h-2z" fill="#3b5277"/><path d="M10 16h4v2h-4z" fill="#fff"/></symbol>
+<symbol id="cat" viewBox="0 0 24 24"><path d="M3 2h3v2h3v2h6V4h3V2h3v17h-3v3H6v-3H3z" fill="currentColor"/><path d="M6 6h3v3H6zm9 0h3v3h-3z" fill="#fff" fill-opacity=".7"/><path d="M6 12h3v3H6zm9 0h3v3h-3z" fill="#3b5277"/><path d="M10 16h4v2h-4z" fill="#fff"/><path d="M0 16h4v2H0zm20 0h4v2h-4z" fill="currentColor"/></symbol>
+<symbol id="cloud" viewBox="0 0 24 24"><path d="M7 4h8v3h4v3h3v3h2v6H0v-6h2v-3h5z" fill="currentColor"/><path d="M7 7h8v3H7zm-3 6h16v3H4z" fill="#fff" fill-opacity=".4"/><path d="M7 13h2v2H7zm8 0h2v2h-2z" fill="#3b5277"/></symbol>
+<symbol id="planet" viewBox="0 0 24 24"><path d="M8 3h8v2h4v4h2v8h-4v4H8v-2H4v-4H2V9h2V5h4z" fill="currentColor"/><path d="M7 6h7v3H7zm7 9h5v3h-5z" fill="#fff" fill-opacity=".5"/><path d="M0 15h4v-2h5v-2h6V9h5V7h4v4h-4v2h-5v2H9v2H4v2H0z" fill="#a9bddc"/><path d="M0 15h4v2H0zm20-8h4v2h-4z" fill="#eef4ff"/></symbol>
+</svg>

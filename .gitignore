@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.tooling/
+.qa/
+test-results/
+playwright-report/
+*.log
+*.local
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+__pycache__/
+*.pyc
+# Keep private resume files out of version control.
+private/
+*.docx
+public/resume/*.pdf
+
+# These specific Chinese and English resumes were approved for the portfolio.
+!public/resume/yaoxing-resume.pdf
+!public/resume/yaoxing-resume-en.pdf

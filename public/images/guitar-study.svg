@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="600" viewBox="0 0 520 600" role="img" aria-labelledby="title desc">
+<title id="title">Acoustic guitar illustration</title><desc id="desc">A warm wood acoustic guitar on a quiet cool blue background. This is an illustration, not a personal photograph.</desc>
+<defs><radialGradient id="bg"><stop stop-color="#e5edf9"/><stop offset="1" stop-color="#f3f6fb"/></radialGradient><linearGradient id="wood" x1="0" x2="1" y2=".6"><stop stop-color="#e0bb88"/><stop offset=".5" stop-color="#d5ab75"/><stop offset="1" stop-color="#b88a57"/></linearGradient><linearGradient id="neck" x2="1"><stop stop-color="#69594c"/><stop offset="1" stop-color="#413a36"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter></defs>
+<rect width="520" height="600" rx="28" fill="url(#bg)"/><ellipse cx="280" cy="519" rx="119" ry="18" fill="#6d82a3" opacity=".15" filter="url(#shadow)"/>
+<g transform="rotate(17 260 300)">
+<path d="M232 275c-43-31-84-2-84 39 0 28 19 46 9 67-22 48-17 112 30 137 41 22 110 20 144-10 39-35 32-91 9-131-12-22 10-41 9-67-1-41-42-63-83-35z" fill="#9c724b" stroke="#8c6749" stroke-width="3"/>
+<path d="M230 274c-39-26-77 0-77 40 0 29 21 46 10 72-20 46-15 104 28 128 39 20 100 16 131-12 37-33 29-83 7-123-12-22 10-43 9-68-1-37-40-57-75-36z" fill="url(#wood)" stroke="#f2d4aa" stroke-width="3"/>
+<path d="M184 310c-9 62 31 144 12 187m19-198c-11 57 29 154 10 212m65-213c-5 59 20 144 5 204" fill="none" stroke="#9d754c" opacity=".16" stroke-width="2"/>
+<rect x="238" y="109" width="34" height="239" rx="6" fill="url(#neck)"/><rect x="243" y="116" width="24" height="225" fill="#4e4238"/>
+<path d="M236 56q18-7 38 0l-4 74h-33z" fill="#99734f" stroke="#72563f" stroke-width="2"/>
+<g fill="#abb1b9" stroke="#777e89"><rect x="227" y="67" width="10" height="8" rx="2"/><rect x="227" y="86" width="10" height="8" rx="2"/><rect x="227" y="105" width="10" height="8" rx="2"/><rect x="271" y="67" width="10" height="8" rx="2"/><rect x="271" y="86" width="10" height="8" rx="2"/><rect x="271" y="105" width="10" height="8" rx="2"/></g>
+<circle cx="254" cy="370" r="45" fill="#dbc69c" stroke="#7a6049" stroke-width="3"/><circle cx="254" cy="370" r="37" fill="#3e3530"/><circle cx="254" cy="370" r="32" fill="#302c29"/>
+<path d="M288 368c29 8 23 46 3 66l-18-15z" fill="#6e4532" opacity=".8"/>
+<rect x="220" y="449" width="69" height="16" rx="5" fill="#5e4736"/><rect x="229" y="447" width="51" height="4" rx="2" fill="#e8dbc6"/>
+<path d="M239 144h33m-33 17h33m-33 18h33m-33 18h33m-33 19h33m-33 19h33m-33 19h33m-33 20h33m-33 20h33m-33 21h33m-33 21h33" stroke="#c1b5a6" stroke-width="1.5"/>
+<g stroke="#e1ded2" stroke-width=".8"><path d="M244 66v383m4-383v383m4-383v383m4-383v383m4-383v383m4-383v383"/></g>
+<g fill="#d5c5a7"><circle cx="255" cy="180" r="2"/><circle cx="255" cy="218" r="2"/><circle cx="255" cy="255" r="2"/><circle cx="255" cy="295" r="2"/></g>
+</g>
+<g fill="#a9bddb"><path d="M102 103h5v12h12v5h-12v12h-5v-12H90v-5h12z"/><path d="M421 407h4v9h9v4h-9v9h-4v-9h-9v-4h9z"/><circle cx="399" cy="143" r="3"/><circle cx="105" cy="437" r="2"/></g>
+</svg>

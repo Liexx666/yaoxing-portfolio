@@ -1,0 +1,2 @@
+cd C:\Users\liexx\Desktop\Li_web
+.\start.ps1
