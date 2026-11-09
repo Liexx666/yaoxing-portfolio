@@ -28,7 +28,7 @@ Mobile theme controls cycle Light > Dark > System. Navigation expands below 981p
 The original Word resume is unchanged. The Chinese interface uses the approved Chinese PDF; the English interface uses the complete English translation. Both use the owner-approved email address.
 
 ## Production build
-Main JS approximately 274.23 kB / gzip 87.65 kB.
+Main JS approximately 276.53 kB / gzip 88.59 kB.
 CSS approximately 45.22 kB / gzip 10.75 kB.
 HTML approximately 1.78 kB / gzip 0.87 kB.
 No remote font or image download is required at runtime.
@@ -109,3 +109,23 @@ The restricted-PATH build and startup were verified in the prior fix, including 
 - Original Word SHA-256 unchanged; Chinese PDF unchanged in this step. Both approved PDFs have narrow .gitignore exceptions. Production dist contains the same English PDF SHA-256 as public.
 - Optional scripts/generate-resume-en.py rebuilds the English PDF from reviewed translation content. Python/ReportLab is not an application runtime/build dependency.
 - No public upload or deployment occurred. Real-device Safari and field performance remain unverified.
+
+## Initial production verification (2026-11-09)
+The owner pushed main commit 1f75e0a59b4a39e999ccbdcd08eb5fabf94339e5 and completed Vercel import/deployment.
+Live URL: https://yaoxing-portfolio.vercel.app/
+- Homepage HTTP 200, CSS/JS HTTP 200, no browser page errors or failed requests observed.
+- Both language profiles, corrected education/birth facts, AgileFlow QA case, and theme/language persistence verified in Chrome.
+- Mobile navigation checked at 390px with no root horizontal overflow.
+- Four real content images and both PDF assets returned HTTP 200; downloaded bytes match local SHA-256 hashes.
+- Both Chinese and English PDF links emitted successful browser downloads with the appropriate locale paths.
+- An initial automation selector expected a concatenated accessible heading name; the deployed accessible name included spacing. The check was corrected to compare h1 textContent, then the complete run passed. No application change was needed.
+- Read-only production verification output and preview captures are in ignored .qa/ files. This is a focused deployed smoke test, separate from the earlier 57-test local regression. Real-device Safari and field performance remain unverified.
+- Speed Insights is only evaluated, not installed in the application at this point.
+
+## Speed Insights local integration (2026-11-09)
+- Installed version: @vercel/speed-insights 2.1.0. Used /react, matching the React/Vite stack; /next is not used.
+- src/main.tsx mounts one SpeedInsights component only in production builds. No language-specific duplicate, custom backend or telemetry API key added.
+- TypeScript/Vite production build and oxlint passed. Full browser regression: 57 passed in 50.0s.
+- Real Vite production preview on a temporary local port injected exactly one /_vercel/speed-insights/script.js tagged @vercel/speed-insights/react. Switching language/theme did not duplicate it; no page errors observed. Temporary preview process stopped afterward.
+- The remote tracking script was stubbed in this focused injection check to avoid sending test visits; it proves client mounting and deduplication, not network event delivery or dashboard visibility.
+- Actual Vercel script loading, event acceptance and dashboard collection remain pending until the owner completes the guided commit/push and redeployment. No new online speed or Core Web Vitals score is claimed.

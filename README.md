@@ -1,6 +1,10 @@
 # YaoXing Portfolio
 A personal portfolio built with React, TypeScript, Vite and Tailwind CSS, with a cool-blue design system inspired by Apple interface principles.
 
+Live website: https://yaoxing-portfolio.vercel.app/
+
+Source: https://github.com/Liexx666/yaoxing-portfolio
+
 ## Run locally on this computer
 Open PowerShell:
 ```powershell
@@ -59,7 +63,7 @@ Tests cover navigation, project dialogs/focus, themes and OS changes, unavailabl
 Automated checks do not establish real iPhone/iPad Safari behavior or full WCAG conformance. See docs/VALIDATION.md.
 
 ## Deployment
-See docs/DEPLOYMENT.md. No public deployment or GitHub upload has been performed.
+See docs/DEPLOYMENT.md. Initial main commit 1f75e0a was pushed to GitHub and deployed to Vercel with owner-guided approval. The production URL was checked on 2026-11-09.
 Original private resume is never required for builds.
 
 ## 中英文同步维护
@@ -118,3 +122,7 @@ AgileFlow 重点展示团队 QA 角色、验收测试、缺陷反馈和回归检
 Project.caseStudy 是可选字段，只有 AgileFlow 配置；游戏保留现有源码截图和项目内容。中英文共用 ProjectDialog，不复制两套组件。
 profile.resumePdf 使用 localized(英文 PDF 路径, 中文 PDF 路径)，Contact.tsx 随语言切换解析文件。英文简历是中文简历完整翻译，沿用更正后的教育日期。
 可选的 scripts/generate-resume-en.py 生成英文 PDF；React 网站构建不依赖 Python。详见 public/resume/README.md。
+
+## 性能监测
+Speed Insights 使用 @vercel/speed-insights/react，在 src/main.tsx 中挂载一次。import.meta.env.PROD 只在正式构建时启用它，本地开发和浏览器回归测试不会加载统计脚本。中英文、Light/Dark 共用同一份监测。
+当前集成已通过本地构建与测试；实际采集需在推送并完成 Vercel 部署后检查。基础版用于观察体验评分，不会自动替网站提速。
